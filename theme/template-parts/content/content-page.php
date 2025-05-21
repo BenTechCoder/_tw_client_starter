@@ -14,16 +14,16 @@
 	<header class="entry-header">
 		<?php
 		if ( ! is_front_page() ) {
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_title( '<h1>', '</h1>' );
 		} else {
-			the_title( '<h2 class="entry-title">', '</h2>' );
+			the_title( '<h2>', '</h2>' );
 		}
 		?>
 	</header><!-- .entry-header -->
 
 	<?php _tw_post_thumbnail(); ?>
 
-	<div>
+	<div class="wrapper prose">
 		<?php
 		the_content();
 

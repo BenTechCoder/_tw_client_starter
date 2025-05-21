@@ -14,7 +14,7 @@
 		<div class="nav__inner flex">
 			
 			
-				<p class="text-step-2">_tw_client_starter</p>
+				<p class="text-step-2"><a href="/">_tw_client_starter</a></p>
 			
 
 			<burger-menu max-width="600">
