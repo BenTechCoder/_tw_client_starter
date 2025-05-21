@@ -1,6 +1,7 @@
 export default () => {
 	return {
 		plugins: {
+			'postcss-utopia': {},
 			'postcss-advanced-variables': {
 				variables: {
 					target: process.env._TW_TARGET || 'frontend',
