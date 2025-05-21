@@ -31,6 +31,20 @@
 				}
 			]
 		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"name": "Headers",
+					"slug": "display",
+					"fontFamily": "display, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'"
+				},
+				{
+					"name": "Content",
+					"slug": "content",
+					"fontFamily": "content, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'"
+				}
+			]
+		},
 		"layout": {
 			"contentSize": "40rem",
 			"wideSize": "60rem"

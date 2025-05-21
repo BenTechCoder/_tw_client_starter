@@ -7,5 +7,12 @@
  * file and is applied both to the front end and in the block editor.
  */
 body {
-	@apply bg-background text-foreground font-sans;
+	@apply bg-background text-foreground font-content;
 }
+/* 
+	TODO:
+	1. Set custom fonts and add comments recipe for how to change for all projects including in tailwind typography for content
+	2. Add Custom Layouts from every layout
+	3. Add custom colors, typography, and spacing to theme.json + recipe in comments
+	4. Add Navbar component and integration
+	*/
