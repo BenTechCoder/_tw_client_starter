@@ -9,7 +9,7 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>">
 
 	<header class="entry-header">
 		<?php
@@ -22,12 +22,9 @@
 
 	<?php _tw_post_thumbnail(); ?>
 
-	<div <?php _tw_content_class( 'entry-content' ); ?>>
+	<div>
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
-		<?php _tw_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 
 </article><!-- #post-${ID} -->
