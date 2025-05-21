@@ -12,32 +12,32 @@
 import BurgerMenu from './components/nav';
 
 if ('customElements' in window) {
-    customElements.define('burger-menu', BurgerMenu);
+	customElements.define('burger-menu', BurgerMenu);
 }
 
 // Reel layout
 
 (function () {
-    const className = 'reel';
-    const reels = Array.from(document.querySelectorAll(`.${className}`));
-    const toggleOverflowClass = (elem) => {
-        elem.classList.toggle(
-            'overflowing',
-            elem.scrollWidth > elem.clientWidth
-        );
-    };
+	const className = 'reel';
+	const reels = Array.from(document.querySelectorAll(`.${className}`));
+	const toggleOverflowClass = (elem) => {
+		elem.classList.toggle(
+			'overflowing',
+			elem.scrollWidth > elem.clientWidth
+		);
+	};
 
-    for (let reel of reels) {
-        if ('ResizeObserver' in window) {
-            new ResizeObserver((entries) => {
-                toggleOverflowClass(entries[0].target);
-            }).observe(reel);
-        }
+	for (let reel of reels) {
+		if ('ResizeObserver' in window) {
+			new ResizeObserver((entries) => {
+				toggleOverflowClass(entries[0].target);
+			}).observe(reel);
+		}
 
-        if ('MutationObserver' in window) {
-            new MutationObserver((entries) => {
-                toggleOverflowClass(entries[0].target);
-            }).observe(reel, { childList: true });
-        }
-    }
+		if ('MutationObserver' in window) {
+			new MutationObserver((entries) => {
+				toggleOverflowClass(entries[0].target);
+			}).observe(reel, { childList: true });
+		}
+	}
 })();

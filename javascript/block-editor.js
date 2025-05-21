@@ -27,7 +27,6 @@ wp.domReady(() => {
 	// 	name: 'lead',
 	// 	label: 'Lead',
 	// });
-
 	// Add additional block editor modifications here. For example, you could
 	// register another block style:
 	//
