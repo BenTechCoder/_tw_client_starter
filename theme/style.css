@@ -454,6 +454,98 @@ main:focus {
   border-color: transparent;
   transform: rotate(180deg);
 }
+.center {
+  box-sizing: content-box;
+  margin-inline: auto;
+  max-inline-size: 65ch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space, var(--space-s));
+  justify-content: flex-start;
+  align-items: center;
+}
+.grid {
+  display: grid;
+  grid-gap: var(--space-m);
+}
+@supports (width: min(250px, 100%)) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+  }
+}
+.reel {
+  display: flex;
+  block-size: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-color: #fff #000;
+}
+.reel::-webkit-scrollbar {
+  block-size: 1rem;
+}
+.reel::-webkit-scrollbar-track {
+  background-color: #000;
+}
+.reel::-webkit-scrollbar-thumb {
+  background-color: #000;
+  background-image: linear-gradient(#000 0, #000 0.25rem, #fff 0.25rem, #fff 0.75rem, #000 0.75rem);
+}
+.reel > * {
+  flex: 0 0 auto;
+}
+.reel > img {
+  block-size: 100%;
+  flex-basis: auto;
+  width: auto;
+}
+.reel > * + * {
+  margin-inline-start: 1rem;
+}
+.reel.overflowing {
+  padding-block-end: 1rem;
+}
+.stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.stack > * {
+  margin-block: 0;
+}
+.stack > * + * {
+  margin-block-start: var(--space, var(--space-s));
+}
+.switcher {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-m);
+}
+.switcher > * {
+  flex-grow: 1;
+  flex-basis: calc(( 30rem - 100%) * 999);
+}
+.switcher > :nth-last-child(n+ 5), .switcher > :nth-last-child(n+ 5) ~ * {
+  flex-basis: 100%;
+}
+.wrapper {
+  width: 95vw;
+  width: clamp(10rem, 95vw, 90rem);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.gutter {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 .visible {
   visibility: visible;
 }

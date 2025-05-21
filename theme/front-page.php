@@ -13,7 +13,7 @@ get_header();
 
 ?>
 
-<section class="py-xl text-step">
+<section class="wrapper stack py-xl text-step">
     <h1>HERO</h1>
     <h2>HEADING</h2>
     <h3>SUBHEADING</h3>

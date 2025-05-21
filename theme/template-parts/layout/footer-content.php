@@ -9,7 +9,7 @@
 
 ?>
 
-<footer id="colophon">
+<footer id="colophon" class="wrapper">
 
 	<?php if ( has_nav_menu( 'menu-2' ) ) : ?>
 		<nav aria-label="<?php esc_attr_e( 'Footer Menu', '_tw' ); ?>">
