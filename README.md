@@ -2,6 +2,7 @@ This is a small fork that customizes the _tw theme to my personal likings. It al
 
 ## TODO:
 * remove [WordPress comments](https://silvawebdesigns.com/how-to-completely-remove-comments-from-a-wordpress-site/)
+* Add custom logo support in functions.php
 
 \_tw
 ====
