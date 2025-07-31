@@ -119,6 +119,10 @@ if (! function_exists('_tw_setup')) :
 
 		// Remove support for block templates.
 		remove_theme_support('block-templates');
+
+		// Add support for Custom Logo in Customizer
+		add_theme_support('custom-logo');
+
 	}
 endif;
 add_action('after_setup_theme', '_tw_setup');
