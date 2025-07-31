@@ -2,13 +2,14 @@
 /node_modules
 /vendor
 
+# Due to current deployment strategy generated files are to be tracked in git
 # Ignore generated JavaScript files:
-*.min.js
+# *.min.js
 
 # Ignore generated CSS files:
-style.css
-style-editor.css
-style-editor-extra.css
+# style.css
+# style-editor.css
+# style-editor-extra.css
 
 # Ignore the generated zip file:
 _tw.zip
